@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "\"Bitcoin\" to \"Tulip\"",
+    "description": "This extension replaces the word \"Bitcoin\" with \"Tulip\".",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "popup.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+      "default_icon": "icon.png"
+    }
+  }
